@@ -117,7 +117,7 @@ function App() {
           />
         </label>
         <label>
-          Destination:
+          Embarkation Port:
           <select
             name="Embarked"
             value={inputs.Embarked}
