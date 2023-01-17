@@ -93,7 +93,7 @@ function App() {
           />
         </label>
         <label>
-          Sex:
+          Gender:
           <select
             name="Sex"
             value={inputs.Sex}
