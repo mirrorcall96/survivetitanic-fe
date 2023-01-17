@@ -204,20 +204,24 @@ function App() {
               }}
             ></div>
           )}
-          <div
-            className="cloud"
-            style={{
-              backgroundImage:
-                "url('https://i.postimg.cc/VNkrLZCV/cloud-md.png')",
-            }}
-          ></div>
-          <div
-            className="cloud2"
-            style={{
-              backgroundImage:
-                "url('https://i.postimg.cc/VNkrLZCV/cloud-md.png')",
-            }}
-          ></div>
+          {!isMobile && (
+            <>
+              <div
+                className="cloud"
+                style={{
+                  backgroundImage:
+                    "url('https://i.postimg.cc/VNkrLZCV/cloud-md.png')",
+                }}
+              ></div>
+              <div
+                className="cloud2"
+                style={{
+                  backgroundImage:
+                    "url('https://i.postimg.cc/VNkrLZCV/cloud-md.png')",
+                }}
+              ></div>
+            </>
+          )}
         </div>
         <img
           style={{
@@ -244,8 +248,8 @@ function App() {
                     ? "https://www.history.com/.image/t_share/MTc2NTQ1ODM1NDQwNDgyMDU4/sinking-of-the-titanic-gettyimages-542907919-1.jpg"
                     : "https://static.vecteezy.com/system/resources/previews/001/193/401/original/death-symbol-png.png"
                 }
-                width={result === "Survived" ? 600 : 200}
-                height={result === "Survived" ? 320 : 200}
+                width={result === "Survived" && !isMobile ? 100 : 200}
+                height={result === "Survived" && !isMobile ? 100 : 200}
               />
             </center>
           )}
