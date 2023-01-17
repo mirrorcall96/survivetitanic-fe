@@ -238,6 +238,7 @@ function App() {
             <center>
               <h1>{result}</h1>
               <img
+                alt="result"
                 src={
                   result === "Survived"
                     ? "https://www.history.com/.image/t_share/MTc2NTQ1ODM1NDQwNDgyMDU4/sinking-of-the-titanic-gettyimages-542907919-1.jpg"
