@@ -248,8 +248,8 @@ function App() {
                     ? "https://www.history.com/.image/t_share/MTc2NTQ1ODM1NDQwNDgyMDU4/sinking-of-the-titanic-gettyimages-542907919-1.jpg"
                     : "https://static.vecteezy.com/system/resources/previews/001/193/401/original/death-symbol-png.png"
                 }
-                width={result === "Survived" && !isMobile ? 100 : 200}
-                height={result === "Survived" && !isMobile ? 100 : 200}
+                width={result === "Survived" && !isMobile ? 600 : 200}
+                height={result === "Survived" && !isMobile ? 300 : 200}
               />
             </center>
           )}
